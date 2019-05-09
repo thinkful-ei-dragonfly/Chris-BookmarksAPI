@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+.articles {
+    text-align: center;
+    font-size: 25px;
+}
+
+.articles, li {
+    list-style: none;
+}
