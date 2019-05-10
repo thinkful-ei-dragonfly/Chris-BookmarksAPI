@@ -4,7 +4,12 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
 }
+
+
 
 button, input[type="text"] {
     padding: 5px;
@@ -12,23 +17,6 @@ button, input[type="text"] {
   
 button:hover {
     cursor: pointer;
-}
-
-.bookmark-top {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.bookmarks-display {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-
-.bookmarks-ribbon {
-    text-align: center;
-    background-color: lightgrey;
 }
 
 .articles {
@@ -39,14 +27,14 @@ button:hover {
 
 .articles > li {
     margin-bottom: 20px;
-    border: 1px solid grey;
+    border: 1px solid  rgb(196, 190, 190);
     padding-bottom: 20px;
     width: 100%;
   }
 
 .article-title {
     background-color: rgb(196, 190, 190);
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .rating {
@@ -60,3 +48,72 @@ button:hover {
     padding-bottom: 15px;
     border: solid lightgray;
 }
+
+form {
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+.title-creator {
+   
+    display: inline-block;
+}
+
+.Create-Title {
+    width: 100%;
+    line-height: 38px;
+    font-size: 35px;
+    font-weight: 300;
+    color: #565656;
+    text-align: center;
+    letter-spacing: 0;
+    margin: 0 auto 45px;
+}
+
+.bookmarks-ribbon {
+    width: 100%;
+    line-height: 38px;
+    font-size: 35px;
+    font-weight: 300;
+    color: #565656;
+    text-align: center;
+    letter-spacing: 0;
+    margin: 0 auto 45px;
+    margin-top: 25px;
+}
+
+input[type="text"],
+button[type="submit"] {
+    height: auto;
+}
+
+.container-two {
+    height: 200px;
+}
+
+
+.container-two,
+input[type="text"],
+button[type="submit"]{
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  text-align: left;
+  padding: 15px;
+  border: 2px solid #c9c6c6;
+  border-radius: 3px;
+  background: #fcfcfc;
+  margin: 10px auto 20px;
+}
+
+button[type="submit"] {
+    height: auto;
+    font-size: 22px;
+    text-align: center;
+    background:  rgb(196, 190, 190);
+    border: 0;
+    margin-bottom: 0;
+  }
