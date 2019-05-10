@@ -47,7 +47,8 @@ const createBookmark = function(title, url, desc, rating) {
         title,
         url,
         desc,
-        rating
+        rating,
+        expanded: false
     });
     return listApiFetch(`${BASE_URL}`, {
         method: 'POST',
