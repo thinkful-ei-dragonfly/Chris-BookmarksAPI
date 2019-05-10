@@ -2,11 +2,61 @@
     box-sizing: border-box;
 }
 
-.articles {
-    text-align: center;
-    font-size: 25px;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-.articles, li {
+button, input[type="text"] {
+    padding: 5px;
+}
+  
+button:hover {
+    cursor: pointer;
+}
+
+.bookmark-top {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bookmarks-display {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.bookmarks-ribbon {
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.articles {
     list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.articles > li {
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+.article-title {
+    background-color: rgb(196, 190, 190);
+    font-size: 20px;
+}
+
+.rating {
+    margin-top: 15px;
+}
+
+.article-description {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: solid lightgray;
 }
