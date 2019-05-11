@@ -1,14 +1,14 @@
 /* global shoppingList, store, api */
 
-$(document).ready(function() {
+$(() => {
     eventHandler.bindEventListeners();
+    eventHandler.render();
+    eventHandler.renderForm();
+    api.getBookmarks()
+      .then((items) => {
+        console.log(items);
+        items.forEach((item) => store.addItem(item));
+        eventHandler.render();
+      });
   
-  
-
-api.createBookmark('Youtube', 'https://youtube.com', 'Watch and upload videos', 4, 'true')
-    .then((item) => {
-      console.log(item);
-    })
-    .catch(err => console.log(err.message))
-
-});
+  });

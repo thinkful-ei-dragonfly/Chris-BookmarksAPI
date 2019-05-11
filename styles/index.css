@@ -127,3 +127,9 @@ button[type="submit"] {
 .more-info {
     margin-top: 15px;
 }
+
+.error-content {
+    border: solid red;
+    background-color: lightcoral;
+    text-transform: uppercase;
+}

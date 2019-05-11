@@ -1,20 +1,13 @@
 const store = (function() {
-    
-    const setError = function(error) {
-        this.error = error;
-      };
 
     const addItem = function(bookmark) {
+        bookmark.expanded = false;
+        bookmark.isEditing = false;
         this.bookmarks.push(bookmark);
     };
 
     const setAdding = function() {
-        store.adding = !store.adding;
-    }
-
-    const setIsExpanding = function(id, isExpanding) {
-        const bookmark= this.findById(id);
-        bookmark.expanded = expanded;
+        this.adding = !this.adding;
     }
 
     const findById = function(id) {
@@ -25,10 +18,14 @@ const store = (function() {
         this.bookmarks = this.bookmarks.filter(bookmark => bookmark.id !== id);
     };
 
-    const findAndUpdate = function(id, newData) {
-        const bookmark = this.findById(id);
-        Object.assign(item, newData);
+    const setError = function(error) {
+        this.error = error;
+      };
+
+    const setFilter = function(filter) {
+        this.filter = filter;
     };
+
 
     
 
@@ -36,14 +33,15 @@ const store = (function() {
         bookmarks: [],
         error: null,
         adding: false,
+        filter: `none`,
+
         
         addItem,
         findById,
         findAndDelete,
-        findAndUpdate,
         setError,
         setAdding,
-        setIsExpanding
+        setFilter
     }
 
 }());

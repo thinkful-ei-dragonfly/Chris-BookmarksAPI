@@ -7,93 +7,29 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+        <link rel="stylesheet" href="styles/star.css">
         <link rel="stylesheet" href="styles/index.css">
     </head>
     <body>
         <main role="main">
-            <div class="bookmark-top">
             <div class="error-container"></div>
-            <header role="heading">
+            <div class="bookmark-top">
+                <header role="heading">
                 <h1>My Bookmarks</h1>
-            </header>
-            <button class="add-bookmark js-add-bookmark">Add Bookmark</button>
-            <button class="minimum-rating js-minimum-rating">Minimum Rating</button>
+                </header>
+                <form id="js-add-bookmark">
+                </form>
             </div>
             <hr></hr>
             <div class="bookmarks-display">
-                <h3 class="bookmarks-ribbon">Bookmarks</h3>
+                <h2 class="bookmarks-ribbon">Bookmarks</h2>
                 <ul class="articles js-articles">
-                    <li class="article js-article">
-                        <div class="article-title">Darce Choke</div>
-                            <div class="rating">
-                                &#9733;
-                                &#9733;
-                                &#9733;
-                                &#9734;
-                                &#9734;
-                            </div>
-                            <p class="article-description">
-                                    The Darce choke is, in essence, an anaconda choke done on the other side. 
-                                    Both of these chokes originate from the arm triangle 
-                                    (kata-gatame) and share its mechanics.
-                                    The principles behind the Darce are that you’re using your arms to 
-                                    create a triangle around the opponent’s neck, cutting out the blood 
-                                    flow to the brain. One arm is placed in a V-shape at the front 
-                                    of the neck while trapping the opponent’s shoulder. 
-                                    The palm of this arm is then placed in the crease of the opposite 
-                                    arm’s elbow, grabbing the biceps. this creates the triangle shape 
-                                    that is essential to controlling the position.
-                            </p>
-                            <button onclick="window.location.href = 'https://bjj-world.com/mechanics-of-the-darce-choke/';">Visit Site</button>
-                            <button class="delete-bookmark">Delete</button>
-                    </li>
-                    <li class="article js-article">
-                        <p class="article-title">Article Title</p>
-                            <div class="rating">
-                                &#9733;
-                                &#9733;
-                                &#9733;
-                                &#9734;
-                                &#9734;
-                            </div>
-                    </li>
-                    <li class="article js-article">
-                        <p class="article-title">Article Title</p>
-                            <div class="rating">
-                                &#9733;
-                                &#9733;
-                                &#9733;
-                                &#9734;
-                                &#9734;
-                            </div>
-                    </li>
-                    <li class="article js-article">
-                            <p class="article-title">Article Title</p>
-                                <div class="rating">
-                                    &#9733;
-                                    &#9733;
-                                    &#9733;
-                                    &#9734;
-                                    &#9734;
-                                </div>
-                    </li>
-                    <li class="article js-article">
-                            <p class="article-title">Article Title</p>
-                                <div class="rating">
-                                    &#9733;
-                                    &#9733;
-                                    &#9733;
-                                    &#9734;
-                                    &#9734;
-                                </div>
-                    </li>
                 </ul>
-            </div>
-            </div>
+            </div>    
         </main>
-        <footer role="contentinfo"></footer>
+        
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="scripts/store.js"></script>
         <script type="text/javascript" src="scripts/eventhandler.js"></script>
         <script type='text/javascript' src="scripts/api.js"></script>
