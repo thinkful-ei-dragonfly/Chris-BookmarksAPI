@@ -9,6 +9,12 @@ body {
     text-align: center;
 }
 
+form {
+    border: 1px solid  rgb(196, 190, 190);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
 
 
 button, input[type="text"] {
@@ -90,12 +96,12 @@ button[type="submit"] {
     height: auto;
 }
 
-.container-two {
+.description-box {
     height: 200px;
 }
 
 
-.container-two,
+.description-box,
 input[type="text"],
 button[type="submit"]{
   display: block;
@@ -117,3 +123,7 @@ button[type="submit"] {
     border: 0;
     margin-bottom: 0;
   }
+
+.more-info {
+    margin-top: 15px;
+}
